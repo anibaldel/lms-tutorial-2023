@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
         return NextResponse.json(course)
     } catch (error) {
-        console.log("[COURSES]", error);
+        console.log("[COURSES_CREATE]", error);
         return new NextResponse("Error Interno", { status: 500})
     }
 }
